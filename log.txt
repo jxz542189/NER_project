@@ -1,0 +1,365 @@
+2018-12-01 15:34:25,187 - tensorflow - INFO - Using default config.
+2018-12-01 15:34:25,188 - tensorflow - WARNING - Using temporary folder as model directory: /tmp/tmpc4ewjxy5
+2018-12-01 15:34:25,190 - tensorflow - INFO - Using config: {'_model_dir': '/tmp/tmpc4ewjxy5', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 600, '_session_config': None, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_device_fn': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x7f51e04a8ef0>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2018-12-01 15:34:25,191 - tensorflow - WARNING - Estimator's model_fn (<function model_fn_builder.<locals>.model_fn at 0x7f51e04a6d90>) includes params argument, but params are not passed to Estimator.
+2018-12-01 15:34:25,350 - tensorflow - INFO - Using default config.
+2018-12-01 15:34:25,351 - tensorflow - WARNING - Using temporary folder as model directory: /tmp/tmpdx1xgwg2
+2018-12-01 15:34:25,353 - tensorflow - INFO - Using config: {'_model_dir': '/tmp/tmpdx1xgwg2', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 600, '_session_config': None, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_device_fn': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x7f51e04a9f28>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2018-12-01 15:34:25,353 - tensorflow - WARNING - Estimator's model_fn (<function model_fn_builder.<locals>.model_fn at 0x7f51e04a7e18>) includes params argument, but params are not passed to Estimator.
+2018-12-01 15:34:25,365 - bert_as_predict_by_restservice - INFO - {"msg": "\u8ba1\u7b97\u673a\u535a\u58eb\u7684\u8bdd|\u9694\u58c1\u5b9e\u9a8c\u5ba4\u6709\u53bb\u817e\u8baf\u5f0080w\u7684|\u5f53\u7136\u8fd9\u5e94\u8be5\u662f\u6bd4\u8f83\u4f18\u79c0\u7684\u535a\u58eb"}
+2018-12-01 15:34:25,365 - bert_as_predict_by_restservice - INFO - ip: 127.0.0.1
+2018-12-01 15:34:25,366 - bert_as_predict_by_restservice - WARNING - state: Traceback (most recent call last):
+  File "/root/PycharmProjects/NER_project/bert_as_predict_by_restservice.py", line 85, in predict_server
+    msg = json_data['msg']
+TypeError: string indices must be integers
+
+2018-12-01 15:34:25,832 - tensorflow - INFO - Using default config.
+2018-12-01 15:34:25,832 - tensorflow - WARNING - Using temporary folder as model directory: /tmp/tmp8oyht165
+2018-12-01 15:34:25,834 - tensorflow - INFO - Using config: {'_model_dir': '/tmp/tmp8oyht165', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 600, '_session_config': None, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_device_fn': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x7f51e04aaeb8>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2018-12-01 15:34:25,834 - tensorflow - WARNING - Estimator's model_fn (<function model_fn_builder.<locals>.model_fn at 0x7f51e04a8d08>) includes params argument, but params are not passed to Estimator.
+2018-12-01 15:37:47,064 - tensorflow - INFO - Using default config.
+2018-12-01 15:37:47,065 - tensorflow - WARNING - Using temporary folder as model directory: /tmp/tmpd6a6uroi
+2018-12-01 15:37:47,067 - tensorflow - INFO - Using config: {'_model_dir': '/tmp/tmpd6a6uroi', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 600, '_session_config': None, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_device_fn': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x7f02480cbeb8>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2018-12-01 15:37:47,067 - tensorflow - WARNING - Estimator's model_fn (<function model_fn_builder.<locals>.model_fn at 0x7f02480c9d90>) includes params argument, but params are not passed to Estimator.
+2018-12-01 15:37:47,279 - bert_as_predict_by_restservice - INFO - {"msg": "\u8ba1\u7b97\u673a\u535a\u58eb\u7684\u8bdd|\u9694\u58c1\u5b9e\u9a8c\u5ba4\u6709\u53bb\u817e\u8baf\u5f0080w\u7684|\u5f53\u7136\u8fd9\u5e94\u8be5\u662f\u6bd4\u8f83\u4f18\u79c0\u7684\u535a\u58eb"}
+2018-12-01 15:37:47,280 - bert_as_predict_by_restservice - INFO - ip: 127.0.0.1
+2018-12-01 15:37:47,280 - bert_as_predict_by_restservice - WARNING - state: Traceback (most recent call last):
+  File "/root/PycharmProjects/NER_project/bert_as_predict_by_restservice.py", line 86, in predict_server
+    msg = json_data['msg']
+TypeError: string indices must be integers
+
+2018-12-01 15:37:47,625 - tensorflow - INFO - Using default config.
+2018-12-01 15:37:47,625 - tensorflow - WARNING - Using temporary folder as model directory: /tmp/tmp_3cnkcma
+2018-12-01 15:37:47,626 - tensorflow - INFO - Using config: {'_model_dir': '/tmp/tmp_3cnkcma', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 600, '_session_config': None, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_device_fn': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x7f02480ceef0>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2018-12-01 15:37:47,626 - tensorflow - WARNING - Estimator's model_fn (<function model_fn_builder.<locals>.model_fn at 0x7f02480ccd08>) includes params argument, but params are not passed to Estimator.
+2018-12-01 15:37:47,956 - tensorflow - INFO - Using default config.
+2018-12-01 15:37:47,957 - tensorflow - WARNING - Using temporary folder as model directory: /tmp/tmpck7cfmsl
+2018-12-01 15:37:47,958 - tensorflow - INFO - Using config: {'_model_dir': '/tmp/tmpck7cfmsl', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 600, '_session_config': None, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_device_fn': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x7f02480cdf28>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2018-12-01 15:37:47,959 - tensorflow - WARNING - Estimator's model_fn (<function model_fn_builder.<locals>.model_fn at 0x7f02480cbe18>) includes params argument, but params are not passed to Estimator.
+2018-12-01 15:39:40,268 - tensorflow - INFO - Using default config.
+2018-12-01 15:39:40,269 - tensorflow - WARNING - Using temporary folder as model directory: /tmp/tmp3l3h3jpu
+2018-12-01 15:39:40,271 - tensorflow - INFO - Using config: {'_model_dir': '/tmp/tmp3l3h3jpu', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 600, '_session_config': None, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_device_fn': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x7fd5e46aaef0>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2018-12-01 15:39:40,271 - tensorflow - WARNING - Estimator's model_fn (<function model_fn_builder.<locals>.model_fn at 0x7fd5e46a8d08>) includes params argument, but params are not passed to Estimator.
+2018-12-01 15:39:40,438 - bert_as_predict_by_restservice - INFO - {"msg": "\u8ba1\u7b97\u673a\u535a\u58eb\u7684\u8bdd|\u9694\u58c1\u5b9e\u9a8c\u5ba4\u6709\u53bb\u817e\u8baf\u5f0080w\u7684|\u5f53\u7136\u8fd9\u5e94\u8be5\u662f\u6bd4\u8f83\u4f18\u79c0\u7684\u535a\u58eb"}
+2018-12-01 15:39:40,438 - bert_as_predict_by_restservice - INFO - ip: 127.0.0.1
+2018-12-01 15:39:40,438 - bert_as_predict_by_restservice - WARNING - state: Traceback (most recent call last):
+  File "/root/PycharmProjects/NER_project/bert_as_predict_by_restservice.py", line 88, in predict_server
+    msg = json_data['msg']
+TypeError: string indices must be integers
+
+2018-12-01 15:39:40,551 - tensorflow - INFO - Using default config.
+2018-12-01 15:39:40,551 - tensorflow - WARNING - Using temporary folder as model directory: /tmp/tmpy9dwikw8
+2018-12-01 15:39:40,552 - tensorflow - INFO - Using config: {'_model_dir': '/tmp/tmpy9dwikw8', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 600, '_session_config': None, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_device_fn': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x7fd5e46a9f28>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2018-12-01 15:39:40,553 - tensorflow - WARNING - Estimator's model_fn (<function model_fn_builder.<locals>.model_fn at 0x7fd5e46a7e18>) includes params argument, but params are not passed to Estimator.
+2018-12-01 15:39:40,908 - tensorflow - INFO - Using default config.
+2018-12-01 15:39:40,909 - tensorflow - WARNING - Using temporary folder as model directory: /tmp/tmp50kjsqlx
+2018-12-01 15:39:40,912 - tensorflow - INFO - Using config: {'_model_dir': '/tmp/tmp50kjsqlx', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 600, '_session_config': None, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_device_fn': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x7fd5e46a7eb8>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2018-12-01 15:39:40,913 - tensorflow - WARNING - Estimator's model_fn (<function model_fn_builder.<locals>.model_fn at 0x7fd5e46a5d90>) includes params argument, but params are not passed to Estimator.
+2018-12-01 15:40:11,906 - bert_as_predict_by_restservice - INFO - {'msg': '计算机博士的话|隔壁实验室有去腾讯开80w的|当然这应该是比较优秀的博士'}
+2018-12-01 15:40:11,907 - bert_as_predict_by_restservice - INFO - ip: 127.0.0.1
+2018-12-01 15:40:11,907 - tensorflow - INFO - Could not find trained model in model_dir: /tmp/tmp3l3h3jpu, running initialization to predict.
+2018-12-01 15:40:11,977 - tensorflow - INFO - Calling model_fn.
+2018-12-01 15:40:17,846 - tensorflow - INFO - Done calling model_fn.
+2018-12-01 15:40:18,914 - tensorflow - INFO - Graph was finalized.
+2018-12-01 15:40:19,999 - tensorflow - INFO - Running local_init_op.
+2018-12-01 15:40:20,052 - tensorflow - INFO - Done running local_init_op.
+2018-12-01 15:40:21,808 - bert_as_predict_by_restservice - WARNING - state: Traceback (most recent call last):
+  File "/root/PycharmProjects/NER_project/bert_as_predict_by_restservice.py", line 92, in predict_server
+    'res': res})
+  File "/root/anaconda3/envs/tensorflow/lib/python3.6/site-packages/flask/json/__init__.py", line 321, in jsonify
+    dumps(data, indent=indent, separators=separators) + '\n',
+  File "/root/anaconda3/envs/tensorflow/lib/python3.6/site-packages/flask/json/__init__.py", line 179, in dumps
+    rv = _json.dumps(obj, **kwargs)
+  File "/root/anaconda3/envs/tensorflow/lib/python3.6/site-packages/simplejson/__init__.py", line 399, in dumps
+    **kw).encode(obj)
+  File "/root/anaconda3/envs/tensorflow/lib/python3.6/site-packages/simplejson/encoder.py", line 296, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/root/anaconda3/envs/tensorflow/lib/python3.6/site-packages/simplejson/encoder.py", line 378, in iterencode
+    return _iterencode(o, 0)
+  File "/root/anaconda3/envs/tensorflow/lib/python3.6/site-packages/flask/json/__init__.py", line 81, in default
+    return _json.JSONEncoder.default(self, o)
+  File "/root/anaconda3/envs/tensorflow/lib/python3.6/site-packages/simplejson/encoder.py", line 273, in default
+    o.__class__.__name__)
+TypeError: Object of type ndarray is not JSON serializable
+
+2018-12-01 15:41:09,950 - tensorflow - INFO - Using default config.
+2018-12-01 15:41:09,951 - tensorflow - WARNING - Using temporary folder as model directory: /tmp/tmpto20mzaz
+2018-12-01 15:41:09,953 - tensorflow - INFO - Using config: {'_model_dir': '/tmp/tmpto20mzaz', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 600, '_session_config': None, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_device_fn': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x7f8dfbde4ef0>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2018-12-01 15:41:09,954 - tensorflow - WARNING - Estimator's model_fn (<function model_fn_builder.<locals>.model_fn at 0x7f8dfbdddd08>) includes params argument, but params are not passed to Estimator.
+2018-12-01 15:41:10,127 - bert_as_predict_by_restservice - INFO - {'msg': '计算机博士的话|隔壁实验室有去腾讯开80w的|当然这应该是比较优秀的博士'}
+2018-12-01 15:41:10,127 - bert_as_predict_by_restservice - INFO - ip: 127.0.0.1
+2018-12-01 15:41:10,128 - tensorflow - INFO - Could not find trained model in model_dir: /tmp/tmpto20mzaz, running initialization to predict.
+2018-12-01 15:41:10,176 - tensorflow - INFO - Calling model_fn.
+2018-12-01 15:41:10,552 - tensorflow - INFO - Using default config.
+2018-12-01 15:41:10,553 - tensorflow - WARNING - Using temporary folder as model directory: /tmp/tmp94tc19qk
+2018-12-01 15:41:10,555 - tensorflow - INFO - Using config: {'_model_dir': '/tmp/tmp94tc19qk', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 600, '_session_config': None, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_device_fn': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x7f8dfbde3f28>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2018-12-01 15:41:10,555 - tensorflow - WARNING - Estimator's model_fn (<function model_fn_builder.<locals>.model_fn at 0x7f8dfbddde18>) includes params argument, but params are not passed to Estimator.
+2018-12-01 15:41:10,761 - tensorflow - INFO - Using default config.
+2018-12-01 15:41:10,762 - tensorflow - WARNING - Using temporary folder as model directory: /tmp/tmptkg03r1k
+2018-12-01 15:41:10,763 - tensorflow - INFO - Using config: {'_model_dir': '/tmp/tmptkg03r1k', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 600, '_session_config': None, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_device_fn': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x7f8dfbde1ef0>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2018-12-01 15:41:10,764 - tensorflow - WARNING - Estimator's model_fn (<function model_fn_builder.<locals>.model_fn at 0x7f8dfbdded90>) includes params argument, but params are not passed to Estimator.
+2018-12-01 15:41:15,245 - tensorflow - INFO - Done calling model_fn.
+2018-12-01 15:41:16,060 - tensorflow - INFO - Graph was finalized.
+2018-12-01 15:41:17,061 - tensorflow - INFO - Running local_init_op.
+2018-12-01 15:41:17,129 - tensorflow - INFO - Done running local_init_op.
+2018-12-01 15:41:18,870 - bert_as_predict_by_restservice - WARNING - state: Traceback (most recent call last):
+  File "/root/PycharmProjects/NER_project/bert_as_predict_by_restservice.py", line 93, in predict_server
+    'res': res})
+  File "/root/anaconda3/envs/tensorflow/lib/python3.6/site-packages/flask/json/__init__.py", line 321, in jsonify
+    dumps(data, indent=indent, separators=separators) + '\n',
+  File "/root/anaconda3/envs/tensorflow/lib/python3.6/site-packages/flask/json/__init__.py", line 179, in dumps
+    rv = _json.dumps(obj, **kwargs)
+  File "/root/anaconda3/envs/tensorflow/lib/python3.6/site-packages/simplejson/__init__.py", line 399, in dumps
+    **kw).encode(obj)
+  File "/root/anaconda3/envs/tensorflow/lib/python3.6/site-packages/simplejson/encoder.py", line 296, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/root/anaconda3/envs/tensorflow/lib/python3.6/site-packages/simplejson/encoder.py", line 378, in iterencode
+    return _iterencode(o, 0)
+  File "/root/anaconda3/envs/tensorflow/lib/python3.6/site-packages/flask/json/__init__.py", line 81, in default
+    return _json.JSONEncoder.default(self, o)
+  File "/root/anaconda3/envs/tensorflow/lib/python3.6/site-packages/simplejson/encoder.py", line 273, in default
+    o.__class__.__name__)
+TypeError: Object of type ndarray is not JSON serializable
+
+2018-12-01 15:42:37,881 - tensorflow - INFO - Using default config.
+2018-12-01 15:42:37,882 - tensorflow - WARNING - Using temporary folder as model directory: /tmp/tmpqha0r0cw
+2018-12-01 15:42:37,884 - tensorflow - INFO - Using config: {'_model_dir': '/tmp/tmpqha0r0cw', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 600, '_session_config': None, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_device_fn': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x7f3336329eb8>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2018-12-01 15:42:37,885 - tensorflow - INFO - Using default config.
+2018-12-01 15:42:37,884 - tensorflow - WARNING - Estimator's model_fn (<function model_fn_builder.<locals>.model_fn at 0x7f3336323d08>) includes params argument, but params are not passed to Estimator.
+2018-12-01 15:42:37,885 - tensorflow - WARNING - Using temporary folder as model directory: /tmp/tmp6onpuz0j
+2018-12-01 15:42:37,886 - tensorflow - INFO - Using config: {'_model_dir': '/tmp/tmp6onpuz0j', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 600, '_session_config': None, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_device_fn': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x7f3336327eb8>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2018-12-01 15:42:37,887 - tensorflow - WARNING - Estimator's model_fn (<function model_fn_builder.<locals>.model_fn at 0x7f3336325d90>) includes params argument, but params are not passed to Estimator.
+2018-12-01 15:42:38,055 - bert_as_predict_by_restservice - INFO - {'msg': '计算机博士的话|隔壁实验室有去腾讯开80w的|当然这应该是比较优秀的博士'}
+2018-12-01 15:42:38,055 - bert_as_predict_by_restservice - INFO - ip: 127.0.0.1
+2018-12-01 15:42:38,056 - tensorflow - INFO - Could not find trained model in model_dir: /tmp/tmp6onpuz0j, running initialization to predict.
+2018-12-01 15:42:38,115 - tensorflow - INFO - Calling model_fn.
+2018-12-01 15:42:38,374 - tensorflow - INFO - Using default config.
+2018-12-01 15:42:38,375 - tensorflow - WARNING - Using temporary folder as model directory: /tmp/tmptifb77f4
+2018-12-01 15:42:38,376 - tensorflow - INFO - Using config: {'_model_dir': '/tmp/tmptifb77f4', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 600, '_session_config': None, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_device_fn': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x7f3336329f28>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2018-12-01 15:42:38,377 - tensorflow - WARNING - Estimator's model_fn (<function model_fn_builder.<locals>.model_fn at 0x7f3336327e18>) includes params argument, but params are not passed to Estimator.
+2018-12-01 15:42:43,987 - tensorflow - INFO - Done calling model_fn.
+2018-12-01 15:42:44,993 - tensorflow - INFO - Graph was finalized.
+2018-12-01 15:42:45,962 - tensorflow - INFO - Running local_init_op.
+2018-12-01 15:42:46,014 - tensorflow - INFO - Done running local_init_op.
+2018-12-01 15:42:47,819 - bert_as_predict_by_restservice - WARNING - state: Traceback (most recent call last):
+  File "/root/PycharmProjects/NER_project/bert_as_predict_by_restservice.py", line 96, in predict_server
+    'res': res})
+  File "/root/anaconda3/envs/tensorflow/lib/python3.6/site-packages/flask/json/__init__.py", line 321, in jsonify
+    dumps(data, indent=indent, separators=separators) + '\n',
+  File "/root/anaconda3/envs/tensorflow/lib/python3.6/site-packages/flask/json/__init__.py", line 179, in dumps
+    rv = _json.dumps(obj, **kwargs)
+  File "/root/anaconda3/envs/tensorflow/lib/python3.6/site-packages/simplejson/__init__.py", line 399, in dumps
+    **kw).encode(obj)
+  File "/root/anaconda3/envs/tensorflow/lib/python3.6/site-packages/simplejson/encoder.py", line 296, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/root/anaconda3/envs/tensorflow/lib/python3.6/site-packages/simplejson/encoder.py", line 378, in iterencode
+    return _iterencode(o, 0)
+  File "/root/anaconda3/envs/tensorflow/lib/python3.6/site-packages/flask/json/__init__.py", line 81, in default
+    return _json.JSONEncoder.default(self, o)
+  File "/root/anaconda3/envs/tensorflow/lib/python3.6/site-packages/simplejson/encoder.py", line 273, in default
+    o.__class__.__name__)
+TypeError: Object of type ndarray is not JSON serializable
+
+2018-12-01 15:44:14,986 - tensorflow - INFO - Using default config.
+2018-12-01 15:44:14,986 - tensorflow - WARNING - Using temporary folder as model directory: /tmp/tmpos0higu4
+2018-12-01 15:44:14,987 - tensorflow - INFO - Using config: {'_model_dir': '/tmp/tmpos0higu4', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 600, '_session_config': None, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_device_fn': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x7f482a27deb8>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2018-12-01 15:44:14,988 - tensorflow - WARNING - Estimator's model_fn (<function model_fn_builder.<locals>.model_fn at 0x7f482a27cd08>) includes params argument, but params are not passed to Estimator.
+2018-12-01 15:44:15,139 - bert_as_predict_by_restservice - INFO - {'msg': '计算机博士的话|隔壁实验室有去腾讯开80w的|当然这应该是比较优秀的博士'}
+2018-12-01 15:44:15,139 - bert_as_predict_by_restservice - INFO - ip: 127.0.0.1
+2018-12-01 15:44:15,140 - tensorflow - INFO - Could not find trained model in model_dir: /tmp/tmpos0higu4, running initialization to predict.
+2018-12-01 15:44:15,142 - tensorflow - INFO - Using default config.
+2018-12-01 15:44:15,142 - tensorflow - WARNING - Using temporary folder as model directory: /tmp/tmpjwlq_ua9
+2018-12-01 15:44:15,144 - tensorflow - INFO - Using config: {'_model_dir': '/tmp/tmpjwlq_ua9', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 600, '_session_config': None, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_device_fn': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x7f482a27eef0>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2018-12-01 15:44:15,144 - tensorflow - WARNING - Estimator's model_fn (<function model_fn_builder.<locals>.model_fn at 0x7f482a27bd90>) includes params argument, but params are not passed to Estimator.
+2018-12-01 15:44:15,169 - tensorflow - INFO - Using default config.
+2018-12-01 15:44:15,170 - tensorflow - WARNING - Using temporary folder as model directory: /tmp/tmp7kfgz767
+2018-12-01 15:44:15,171 - tensorflow - INFO - Using config: {'_model_dir': '/tmp/tmp7kfgz767', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 600, '_session_config': None, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_device_fn': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x7f482a27ef60>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2018-12-01 15:44:15,171 - tensorflow - WARNING - Estimator's model_fn (<function model_fn_builder.<locals>.model_fn at 0x7f482a27be18>) includes params argument, but params are not passed to Estimator.
+2018-12-01 15:44:15,207 - tensorflow - INFO - Calling model_fn.
+2018-12-01 15:44:20,490 - tensorflow - INFO - Done calling model_fn.
+2018-12-01 15:44:21,578 - tensorflow - INFO - Graph was finalized.
+2018-12-01 15:44:22,409 - tensorflow - INFO - Running local_init_op.
+2018-12-01 15:44:22,461 - tensorflow - INFO - Done running local_init_op.
+2018-12-01 15:44:24,083 - bert_as_predict_by_restservice - WARNING - state: Traceback (most recent call last):
+  File "/root/PycharmProjects/NER_project/bert_as_predict_by_restservice.py", line 99, in predict_server
+    'res': res})
+  File "/root/anaconda3/envs/tensorflow/lib/python3.6/site-packages/flask/json/__init__.py", line 321, in jsonify
+    dumps(data, indent=indent, separators=separators) + '\n',
+  File "/root/anaconda3/envs/tensorflow/lib/python3.6/site-packages/flask/json/__init__.py", line 179, in dumps
+    rv = _json.dumps(obj, **kwargs)
+  File "/root/anaconda3/envs/tensorflow/lib/python3.6/site-packages/simplejson/__init__.py", line 399, in dumps
+    **kw).encode(obj)
+  File "/root/anaconda3/envs/tensorflow/lib/python3.6/site-packages/simplejson/encoder.py", line 296, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/root/anaconda3/envs/tensorflow/lib/python3.6/site-packages/simplejson/encoder.py", line 378, in iterencode
+    return _iterencode(o, 0)
+  File "/root/anaconda3/envs/tensorflow/lib/python3.6/site-packages/flask/json/__init__.py", line 81, in default
+    return _json.JSONEncoder.default(self, o)
+  File "/root/anaconda3/envs/tensorflow/lib/python3.6/site-packages/simplejson/encoder.py", line 273, in default
+    o.__class__.__name__)
+TypeError: Object of type ndarray is not JSON serializable
+
+2018-12-01 15:47:22,841 - tensorflow - INFO - Using default config.
+2018-12-01 15:47:22,856 - tensorflow - WARNING - Using temporary folder as model directory: /tmp/tmp3t6nd4ie
+2018-12-01 15:47:22,858 - tensorflow - INFO - Using config: {'_model_dir': '/tmp/tmp3t6nd4ie', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 600, '_session_config': None, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_device_fn': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x7fee848e2f60>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2018-12-01 15:47:22,859 - tensorflow - WARNING - Estimator's model_fn (<function model_fn_builder.<locals>.model_fn at 0x7fee848e0e18>) includes params argument, but params are not passed to Estimator.
+2018-12-01 15:47:23,242 - bert_as_predict_by_restservice - INFO - {'msg': '计算机博士的话|隔壁实验室有去腾讯开80w的|当然这应该是比较优秀的博士'}
+2018-12-01 15:47:23,242 - bert_as_predict_by_restservice - INFO - ip: 127.0.0.1
+2018-12-01 15:47:23,243 - tensorflow - INFO - Could not find trained model in model_dir: /tmp/tmp3t6nd4ie, running initialization to predict.
+2018-12-01 15:47:23,323 - tensorflow - INFO - Using default config.
+2018-12-01 15:47:23,324 - tensorflow - WARNING - Using temporary folder as model directory: /tmp/tmpw9btk5m8
+2018-12-01 15:47:23,326 - tensorflow - INFO - Using config: {'_model_dir': '/tmp/tmpw9btk5m8', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 600, '_session_config': None, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_device_fn': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x7fee848e2ef0>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2018-12-01 15:47:23,327 - tensorflow - WARNING - Estimator's model_fn (<function model_fn_builder.<locals>.model_fn at 0x7fee848e1d08>) includes params argument, but params are not passed to Estimator.
+2018-12-01 15:47:23,329 - tensorflow - INFO - Calling model_fn.
+2018-12-01 15:47:23,449 - tensorflow - INFO - Using default config.
+2018-12-01 15:47:23,453 - tensorflow - WARNING - Using temporary folder as model directory: /tmp/tmp54hrri7u
+2018-12-01 15:47:23,455 - tensorflow - INFO - Using config: {'_model_dir': '/tmp/tmp54hrri7u', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 600, '_session_config': None, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_device_fn': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x7fee848e0ef0>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2018-12-01 15:47:23,456 - tensorflow - WARNING - Estimator's model_fn (<function model_fn_builder.<locals>.model_fn at 0x7fee848ded90>) includes params argument, but params are not passed to Estimator.
+2018-12-01 15:47:29,275 - tensorflow - INFO - Done calling model_fn.
+2018-12-01 15:47:30,253 - tensorflow - INFO - Graph was finalized.
+2018-12-01 15:47:31,738 - tensorflow - INFO - Running local_init_op.
+2018-12-01 15:47:31,794 - tensorflow - INFO - Done running local_init_op.
+2018-12-01 15:47:33,579 - bert_as_predict_by_restservice - WARNING - state: Traceback (most recent call last):
+  File "/root/PycharmProjects/NER_project/bert_as_predict_by_restservice.py", line 98, in predict_server
+    res = json.dumps(res)
+  File "/root/anaconda3/envs/tensorflow/lib/python3.6/json/__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "/root/anaconda3/envs/tensorflow/lib/python3.6/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/root/anaconda3/envs/tensorflow/lib/python3.6/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/root/anaconda3/envs/tensorflow/lib/python3.6/json/encoder.py", line 180, in default
+    o.__class__.__name__)
+TypeError: Object of type 'ndarray' is not JSON serializable
+
+2018-12-01 15:50:12,275 - tensorflow - INFO - Using default config.
+2018-12-01 15:50:12,276 - tensorflow - WARNING - Using temporary folder as model directory: /tmp/tmpcrn2vlmu
+2018-12-01 15:50:12,277 - tensorflow - INFO - Using config: {'_model_dir': '/tmp/tmpcrn2vlmu', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 600, '_session_config': None, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_device_fn': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x7f29f58f6f28>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2018-12-01 15:50:12,278 - tensorflow - WARNING - Estimator's model_fn (<function model_fn_builder.<locals>.model_fn at 0x7f29f58f4e18>) includes params argument, but params are not passed to Estimator.
+2018-12-01 15:50:12,462 - tensorflow - INFO - Using default config.
+2018-12-01 15:50:12,463 - tensorflow - WARNING - Using temporary folder as model directory: /tmp/tmpynarfh__
+2018-12-01 15:50:12,465 - tensorflow - INFO - Using config: {'_model_dir': '/tmp/tmpynarfh__', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 600, '_session_config': None, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_device_fn': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x7f29f58f4eb8>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2018-12-01 15:50:12,466 - tensorflow - WARNING - Estimator's model_fn (<function model_fn_builder.<locals>.model_fn at 0x7f29f58f2d90>) includes params argument, but params are not passed to Estimator.
+2018-12-01 15:50:12,944 - tensorflow - INFO - Using default config.
+2018-12-01 15:50:12,944 - tensorflow - WARNING - Using temporary folder as model directory: /tmp/tmp904j8i4k
+2018-12-01 15:50:12,946 - tensorflow - INFO - Using config: {'_model_dir': '/tmp/tmp904j8i4k', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 600, '_session_config': None, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_device_fn': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x7f29f58f6eb8>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2018-12-01 15:50:12,947 - tensorflow - WARNING - Estimator's model_fn (<function model_fn_builder.<locals>.model_fn at 0x7f29f58f5d08>) includes params argument, but params are not passed to Estimator.
+2018-12-01 15:50:20,647 - bert_as_predict_by_restservice - INFO - {'msg': '计算机博士的话|隔壁实验室有去腾讯开80w的|当然这应该是比较优秀的博士'}
+2018-12-01 15:50:20,648 - bert_as_predict_by_restservice - INFO - ip: 127.0.0.1
+2018-12-01 15:50:20,649 - tensorflow - INFO - Could not find trained model in model_dir: /tmp/tmpynarfh__, running initialization to predict.
+2018-12-01 15:50:20,717 - tensorflow - INFO - Calling model_fn.
+2018-12-01 15:50:25,859 - tensorflow - INFO - Done calling model_fn.
+2018-12-01 15:50:26,888 - tensorflow - INFO - Graph was finalized.
+2018-12-01 15:50:27,852 - tensorflow - INFO - Running local_init_op.
+2018-12-01 15:50:27,900 - tensorflow - INFO - Done running local_init_op.
+2018-12-01 15:50:29,623 - bert_as_predict_by_restservice - WARNING - state: Traceback (most recent call last):
+  File "/root/PycharmProjects/NER_project/bert_as_predict_by_restservice.py", line 101, in predict_server
+    'res': res})
+  File "/root/anaconda3/envs/tensorflow/lib/python3.6/site-packages/flask/json/__init__.py", line 321, in jsonify
+    dumps(data, indent=indent, separators=separators) + '\n',
+  File "/root/anaconda3/envs/tensorflow/lib/python3.6/site-packages/flask/json/__init__.py", line 179, in dumps
+    rv = _json.dumps(obj, **kwargs)
+  File "/root/anaconda3/envs/tensorflow/lib/python3.6/site-packages/simplejson/__init__.py", line 399, in dumps
+    **kw).encode(obj)
+  File "/root/anaconda3/envs/tensorflow/lib/python3.6/site-packages/simplejson/encoder.py", line 296, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/root/anaconda3/envs/tensorflow/lib/python3.6/site-packages/simplejson/encoder.py", line 378, in iterencode
+    return _iterencode(o, 0)
+  File "/root/anaconda3/envs/tensorflow/lib/python3.6/site-packages/flask/json/__init__.py", line 81, in default
+    return _json.JSONEncoder.default(self, o)
+  File "/root/anaconda3/envs/tensorflow/lib/python3.6/site-packages/simplejson/encoder.py", line 273, in default
+    o.__class__.__name__)
+TypeError: Object of type ndarray is not JSON serializable
+
+2018-12-01 15:53:43,217 - tensorflow - INFO - Using default config.
+2018-12-01 15:53:43,217 - tensorflow - WARNING - Using temporary folder as model directory: /tmp/tmpw1fhdwgd
+2018-12-01 15:53:43,219 - tensorflow - INFO - Using config: {'_model_dir': '/tmp/tmpw1fhdwgd', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 600, '_session_config': None, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_device_fn': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x7f769f429f98>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2018-12-01 15:53:43,220 - tensorflow - WARNING - Estimator's model_fn (<function model_fn_builder.<locals>.model_fn at 0x7f769f427e18>) includes params argument, but params are not passed to Estimator.
+2018-12-01 15:53:43,406 - bert_as_predict_by_restservice - INFO - {'msg': '计算机博士的话|隔壁实验室有去腾讯开80w的|当然这应该是比较优秀的博士'}
+2018-12-01 15:53:43,406 - bert_as_predict_by_restservice - INFO - ip: 127.0.0.1
+2018-12-01 15:53:43,407 - tensorflow - INFO - Could not find trained model in model_dir: /tmp/tmpw1fhdwgd, running initialization to predict.
+2018-12-01 15:53:43,455 - tensorflow - INFO - Using default config.
+2018-12-01 15:53:43,456 - tensorflow - WARNING - Using temporary folder as model directory: /tmp/tmpfghxixse
+2018-12-01 15:53:43,459 - tensorflow - INFO - Using config: {'_model_dir': '/tmp/tmpfghxixse', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 600, '_session_config': None, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_device_fn': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x7f769f429fd0>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2018-12-01 15:53:43,460 - tensorflow - WARNING - Estimator's model_fn (<function model_fn_builder.<locals>.model_fn at 0x7f769f422d90>) includes params argument, but params are not passed to Estimator.
+2018-12-01 15:53:43,470 - tensorflow - INFO - Calling model_fn.
+2018-12-01 15:53:43,658 - tensorflow - INFO - Using default config.
+2018-12-01 15:53:43,659 - tensorflow - WARNING - Using temporary folder as model directory: /tmp/tmpz7137mcv
+2018-12-01 15:53:43,660 - tensorflow - INFO - Using config: {'_model_dir': '/tmp/tmpz7137mcv', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 600, '_session_config': None, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_device_fn': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x7f769f429f28>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2018-12-01 15:53:43,661 - tensorflow - WARNING - Estimator's model_fn (<function model_fn_builder.<locals>.model_fn at 0x7f769f424d08>) includes params argument, but params are not passed to Estimator.
+2018-12-01 15:53:48,360 - tensorflow - INFO - Done calling model_fn.
+2018-12-01 15:53:49,249 - tensorflow - INFO - Graph was finalized.
+2018-12-01 15:53:50,160 - tensorflow - INFO - Running local_init_op.
+2018-12-01 15:53:50,219 - tensorflow - INFO - Done running local_init_op.
+2018-12-01 15:54:28,405 - bert_as_predict_by_restservice - INFO - {'msg': '计算机博士的话|隔壁实验室有去腾讯开80w的|当然这应该是比较优秀的博士'}
+2018-12-01 15:54:28,405 - bert_as_predict_by_restservice - INFO - ip: 127.0.0.1
+2018-12-01 15:54:28,405 - tensorflow - INFO - Could not find trained model in model_dir: /tmp/tmpz7137mcv, running initialization to predict.
+2018-12-01 15:54:28,471 - tensorflow - INFO - Calling model_fn.
+2018-12-01 15:54:34,222 - tensorflow - INFO - Done calling model_fn.
+2018-12-01 15:54:35,326 - tensorflow - INFO - Graph was finalized.
+2018-12-01 15:54:36,406 - tensorflow - INFO - Running local_init_op.
+2018-12-01 15:54:36,460 - tensorflow - INFO - Done running local_init_op.
+2018-12-01 15:55:27,939 - bert_as_predict_by_restservice - INFO - {'msg': '计算机博士的话|隔壁实验室有去腾讯开80w的|当然这应该是比较优秀的博士'}
+2018-12-01 15:55:27,939 - bert_as_predict_by_restservice - INFO - ip: 127.0.0.1
+2018-12-01 15:55:27,939 - tensorflow - INFO - Could not find trained model in model_dir: /tmp/tmpz7137mcv, running initialization to predict.
+2018-12-01 15:55:28,039 - tensorflow - INFO - Calling model_fn.
+2018-12-01 15:55:32,949 - tensorflow - INFO - Done calling model_fn.
+2018-12-01 15:55:34,143 - tensorflow - INFO - Graph was finalized.
+2018-12-01 15:55:35,104 - tensorflow - INFO - Running local_init_op.
+2018-12-01 15:55:35,150 - tensorflow - INFO - Done running local_init_op.
+2018-12-01 15:56:14,580 - bert_as_predict_by_restservice - INFO - {'msg': '计算机博士的话|隔壁实验室有去腾讯开80w的|当然这应该是比较优秀的博士'}
+2018-12-01 15:56:14,581 - bert_as_predict_by_restservice - INFO - ip: 127.0.0.1
+2018-12-01 15:56:14,581 - tensorflow - INFO - Could not find trained model in model_dir: /tmp/tmpfghxixse, running initialization to predict.
+2018-12-01 15:56:14,647 - tensorflow - INFO - Calling model_fn.
+2018-12-01 15:56:20,260 - tensorflow - INFO - Done calling model_fn.
+2018-12-01 15:56:21,579 - tensorflow - INFO - Graph was finalized.
+2018-12-01 15:56:22,780 - tensorflow - INFO - Running local_init_op.
+2018-12-01 15:56:22,840 - tensorflow - INFO - Done running local_init_op.
+2018-12-01 15:57:04,564 - bert_as_predict_by_restservice - INFO - {'msg': '计算机博士的话|隔壁实验室有去腾讯开80w的|当然这应该是比较优秀的博士'}
+2018-12-01 15:57:04,564 - bert_as_predict_by_restservice - INFO - ip: 127.0.0.1
+2018-12-01 15:57:04,564 - tensorflow - INFO - Could not find trained model in model_dir: /tmp/tmpz7137mcv, running initialization to predict.
+2018-12-01 15:57:04,664 - tensorflow - INFO - Calling model_fn.
+2018-12-01 15:57:10,193 - tensorflow - INFO - Done calling model_fn.
+2018-12-01 15:57:11,249 - tensorflow - INFO - Graph was finalized.
+2018-12-01 15:57:18,055 - tensorflow - INFO - Running local_init_op.
+2018-12-01 15:57:18,113 - tensorflow - INFO - Done running local_init_op.
+2018-12-01 16:03:50,787 - bert_as_predict_by_restservice - INFO - {'msg': '计算机博士的话|隔壁实验室有去腾讯开80w的|当然这应该是比较优秀的博士'}
+2018-12-01 16:03:50,787 - bert_as_predict_by_restservice - INFO - ip: 127.0.0.1
+2018-12-01 16:03:50,788 - tensorflow - INFO - Could not find trained model in model_dir: /tmp/tmpfghxixse, running initialization to predict.
+2018-12-01 16:03:50,904 - tensorflow - INFO - Calling model_fn.
+2018-12-01 16:03:56,116 - tensorflow - INFO - Done calling model_fn.
+2018-12-01 16:03:57,058 - tensorflow - INFO - Graph was finalized.
+2018-12-01 16:04:03,875 - tensorflow - INFO - Running local_init_op.
+2018-12-01 16:04:03,937 - tensorflow - INFO - Done running local_init_op.
+2018-12-01 16:04:39,173 - bert_as_predict_by_restservice - INFO - {'msg': '计算机博士的话|隔壁实验室有去腾讯开80w的|当然这应该是比较优秀的博士'}
+2018-12-01 16:04:39,174 - bert_as_predict_by_restservice - INFO - ip: 127.0.0.1
+2018-12-01 16:04:39,174 - tensorflow - INFO - Could not find trained model in model_dir: /tmp/tmpz7137mcv, running initialization to predict.
+2018-12-01 16:04:39,261 - tensorflow - INFO - Calling model_fn.
+2018-12-01 16:04:43,916 - tensorflow - INFO - Done calling model_fn.
+2018-12-01 16:04:44,849 - tensorflow - INFO - Graph was finalized.
+2018-12-01 16:04:51,786 - tensorflow - INFO - Running local_init_op.
+2018-12-01 16:04:51,844 - tensorflow - INFO - Done running local_init_op.
+2018-12-01 16:05:14,086 - bert_as_predict_by_restservice - INFO - {'msg': '计算机博士的话|隔壁实验室有去腾讯开80w的|当然这应该是比较优秀的博士'}
+2018-12-01 16:05:14,086 - bert_as_predict_by_restservice - INFO - ip: 127.0.0.1
+2018-12-01 16:05:14,086 - tensorflow - INFO - Could not find trained model in model_dir: /tmp/tmpfghxixse, running initialization to predict.
+2018-12-01 16:05:14,208 - tensorflow - INFO - Calling model_fn.
+2018-12-01 16:05:19,537 - tensorflow - INFO - Done calling model_fn.
+2018-12-01 16:05:20,519 - tensorflow - INFO - Graph was finalized.
+2018-12-01 16:05:27,365 - tensorflow - INFO - Running local_init_op.
+2018-12-01 16:05:27,412 - tensorflow - INFO - Done running local_init_op.
+2018-12-01 16:06:01,339 - bert_as_predict_by_restservice - INFO - {'msg': '计算机博士的话|隔壁实验室有去腾讯开80w的|当然这应该是比较优秀的博士'}
+2018-12-01 16:06:01,340 - bert_as_predict_by_restservice - INFO - ip: 127.0.0.1
+2018-12-01 16:06:01,344 - tensorflow - INFO - Could not find trained model in model_dir: /tmp/tmpfghxixse, running initialization to predict.
+2018-12-01 16:06:01,437 - tensorflow - INFO - Calling model_fn.
+2018-12-01 16:06:06,277 - tensorflow - INFO - Done calling model_fn.
+2018-12-01 16:06:07,201 - tensorflow - INFO - Graph was finalized.
+2018-12-01 16:06:14,513 - tensorflow - INFO - Running local_init_op.
+2018-12-01 16:06:14,573 - tensorflow - INFO - Done running local_init_op.
+2018-12-01 16:06:44,743 - bert_as_predict_by_restservice - INFO - {'msg': '计算机博士的话|隔壁实验室有去腾讯开80w的|当然这应该是比较优秀的博士'}
+2018-12-01 16:06:44,743 - bert_as_predict_by_restservice - INFO - ip: 127.0.0.1
+2018-12-01 16:06:44,743 - tensorflow - INFO - Could not find trained model in model_dir: /tmp/tmpw1fhdwgd, running initialization to predict.
+2018-12-01 16:06:44,853 - tensorflow - INFO - Calling model_fn.
+2018-12-01 16:06:50,832 - tensorflow - INFO - Done calling model_fn.
+2018-12-01 16:06:52,100 - tensorflow - INFO - Graph was finalized.
+2018-12-01 16:06:58,942 - tensorflow - INFO - Running local_init_op.
+2018-12-01 16:06:59,009 - tensorflow - INFO - Done running local_init_op.
