@@ -5,11 +5,11 @@ import multiprocessing
 debug = True
 loglevel = 'debug'
 bind = '0.0.0.0:8888'
-pidfile = 'bert_blstm_crf/gun_log/gunicorn.pid'
-logfile = 'bert_blstm_crf/gun_log/debug.log'
+pidfile = 'blstm_crf/gun_log/gunicorn.pid'
+logfile = 'blstm_crf/gun_log/debug.log'
 #daemon = True
-threads = 2
-workers = 3
+threads = 5
+workers = 1
 worker_class = 'gunicorn.workers.ggevent.GeventWorker'
 
 x_forwarded_for_header = 'X-FORWARDED-FOR'

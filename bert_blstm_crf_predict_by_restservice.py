@@ -11,13 +11,15 @@ import pickle
 from blstm_crf.utils.conlleval import return_report
 import traceback
 from blstm_crf.bert_blstm_crf import model_fn_builder
-import collections
-import numpy as np
+from flask import Flask, jsonify, request
+import traceback
 import random
 import re
+from bert.utils.get_request_ip import get_ip
 
-
-config_path = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'config')
+#gunicorn -c blstm_crf_gun.py bert_blstm_crf_predict_by_restservice:app
+app = Flask(__name__)
+config_path = os.path.join(os.path.join(os.path.dirname(os.path.realpath(__file__)), 'blstm_crf'), 'config')
 params_path = os.path.join(config_path, 'params.json')
 log_path = os.path.join(os.path.dirname(os.path.dirname(os.path.realpath(__file__))), 'log.txt')
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
@@ -161,8 +163,8 @@ def result_to_pair(predict_examples, result):
             else:
                 labels.append(id2label[id])
         labels = labels[1:len(words)+1]
-        print("words: ", words)
-        print("labels: ", labels)
+        # print("words: ", words)
+        # print("labels: ", labels)
         i = 0
         while(i < len(labels)):
             if labels[i] == 'B-PER':
@@ -194,92 +196,45 @@ def result_to_pair(predict_examples, result):
                 res.append(''.join(words[start:i]))
             else:
                 i += 1
-        print("res: ", res)
+        # print("res: ", res)
         ner_result.append(' '.join(res))
     return ner_result
 
 
+@app.route('/predict', methods=['post'])
+def predict_server():
+    try:
+        try:
+            temp_data = request.get_data()
+            json_data = json.loads(temp_data)
+            logger.info(json_data)
+            ip = get_ip()
+            logger.info("ip: {}".format(ip))
+        except Exception as e:
+            logger.warning("request failed or request load failed!!!" + traceback.format_exc())
+            return jsonify({"state": "request failed or request load failed!!!",
+                            'trace': traceback.format_exc()})
+        if 'msg' not in json_data:
+            logger.warning('msg field must be in json request!!!')
+            return jsonify({'state': "msg field must be in json request!!!"})
+        else:
+            msg = json_data['msg']
+            res = predict(msg)
+            return jsonify({'state': 'success',
+                            'res': res})
+    except Exception as e:
+        logger.warning("state: "+ traceback.format_exc())
+        return jsonify({"state": "predict failed!!!",
+                        'trace': traceback.format_exc()})
 
-def main(_):
 
 
-    token_path = os.path.join(output_dir, "token_test.txt")
-    if os.path.exists(token_path):
-        os.remove(token_path)
-
-
-    predict_examples = processor.get_test_tmp_examples(data_dir)
-
-    predict_file = os.path.join(output_dir, "predict.tf_record")
-    filed_based_convert_examples_to_features(predict_examples, label_list,
-                                             params.max_seq_length, tokenizer,
-                                             predict_file, mode="test", output_dir=output_dir)
-
-    logger.info("***** Running prediction*****")
-    logger.info("  Num examples = %d", len(predict_examples))
-    logger.info("  Batch size = %d", params.predict_batch_size)
-    predict_drop_remainder = False
-    predict_input_fn = file_based_input_fn_builder(
-        input_file=predict_file,
-        seq_length=params.max_seq_length,
-        is_training=False,
-        drop_remainder=predict_drop_remainder)
-
-    predicted_result = estimator.evaluate(input_fn=predict_input_fn)
-    output_eval_file = os.path.join(output_dir, "predicted_results.txt")
-    with codecs.open(output_eval_file, "w", encoding='utf-8') as writer:
-        tf.logging.info("***** Predict results *****")
-        for key in sorted(predicted_result.keys()):
-            tf.logging.info("  %s = %s", key, str(predicted_result[key]))
-            writer.write("%s = %s\n" % (key, str(predicted_result[key])))
-
-    if os.path.exists(predict_file):
-        os.remove(predict_file)
-
-    result = estimator.predict(input_fn=predict_input_fn)
-    print("result: ", result)
-    print(type(result))
-    output_predict_file = os.path.join(output_dir, "label_test.txt")
-
-    def result_to_pair(writer):
-        for predict_line, prediction in zip(predict_examples, result):
-            idx = 0
-            line = ''
-            # print("prediction: ", prediction)
-            line_token = str(predict_line.text).split(' ')
-            label_token = str(predict_line.label).split(' ')
-            if len(line_token) != len(label_token):
-                logger.info(predict_line.text)
-                logger.info(predict_line.label)
-            for id in prediction['pred_ids']:
-                if id == 0:
-                    continue
-                curr_labels = id2label[id]
-                if curr_labels in ['[CLS]', '[SEP]']:
-                    continue
-                try:
-                    line += line_token[idx] + ' ' + label_token[idx] + ' ' + curr_labels + '\n'
-                except Exception as e:
-                    logger.info(e)
-                    logger.info(predict_line.text)
-                    logger.info(predict_line.label)
-                    line = ''
-                    break
-                idx += 1
-            writer.write(line + '\n')
-
-    with codecs.open(output_predict_file, 'w', encoding='utf-8') as writer:
-        result_to_pair(writer)
-
-    eval_result = return_report(output_predict_file)
-    logger.info(eval_result)
-
-if __name__ == '__main__':
-#['我 变 而 以 书 会 友 以 ， 把 欧 美 、 港 台 流 行 的 食 品 类 图 谱 、 画 册 、 工 具 书 汇 集 一 堂']
-    line = ['习近平抵达巴拿马城开始对巴拿马进行国事访问','我们变而以书会友,以书结缘，把欧美、港台流行的食品类图谱、画册、工具书汇集一堂',
-            '中国国家主席习近平应邀同美国总统特朗普在阿根廷首都布宜诺斯艾利斯共进晚餐并举行会晤。',
-            '中美在促进世界和平和繁荣方面共同肩负着重要责任。一个良好的中美关系符合两国人民根本利益，也是国际社会的普遍期待。']
-
-    res = predict(line)
-    print(res)
+# if __name__ == '__main__':
+# #['我 变 而 以 书 会 友 以 ， 把 欧 美 、 港 台 流 行 的 食 品 类 图 谱 、 画 册 、 工 具 书 汇 集 一 堂']
+#     line = ['习近平抵达巴拿马城开始对巴拿马进行国事访问','我们变而以书会友,以书结缘，把欧美、港台流行的食品类图谱、画册、工具书汇集一堂',
+#             '中国国家主席习近平应邀同美国总统特朗普在阿根廷首都布宜诺斯艾利斯共进晚餐并举行会晤。',
+#             '中美在促进世界和平和繁荣方面共同肩负着重要责任。一个良好的中美关系符合两国人民根本利益，也是国际社会的普遍期待。']
+#
+#     res = predict(line)
+#     print(res)
     # tf.app.run()
