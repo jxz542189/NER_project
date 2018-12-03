@@ -1,0 +1,28 @@
+2018-12-01 20:35:29,137 - tensorflow - INFO - Using default config.
+2018-12-01 20:35:29,138 - tensorflow - WARNING - Using temporary folder as model directory: /tmp/tmpuvs4py3d
+2018-12-01 20:35:29,139 - tensorflow - INFO - Using config: {'_model_dir': '/tmp/tmpuvs4py3d', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 600, '_session_config': None, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_device_fn': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x7f43353d5d68>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2018-12-01 20:35:29,140 - tensorflow - WARNING - Estimator's model_fn (<function model_fn_builder.<locals>.model_fn at 0x7f43353d6400>) includes params argument, but params are not passed to Estimator.
+2018-12-01 20:35:29,371 - tensorflow - INFO - Could not find trained model in model_dir: /tmp/tmpuvs4py3d, running initialization to predict.
+2018-12-01 20:35:29,426 - tensorflow - INFO - Calling model_fn.
+2018-12-01 20:35:33,693 - tensorflow - INFO - Done calling model_fn.
+2018-12-01 20:35:34,560 - tensorflow - INFO - Graph was finalized.
+2018-12-01 20:35:35,521 - tensorflow - INFO - Running local_init_op.
+2018-12-01 20:35:35,561 - tensorflow - INFO - Done running local_init_op.
+2018-12-01 20:35:37,235 - tensorflow - INFO - Could not find trained model in model_dir: /tmp/tmpuvs4py3d, running initialization to predict.
+2018-12-01 20:35:37,273 - tensorflow - INFO - Calling model_fn.
+2018-12-01 20:35:41,218 - tensorflow - INFO - Done calling model_fn.
+2018-12-01 20:35:42,052 - tensorflow - INFO - Graph was finalized.
+2018-12-01 20:35:48,715 - tensorflow - INFO - Running local_init_op.
+2018-12-01 20:35:48,757 - tensorflow - INFO - Done running local_init_op.
+2018-12-01 20:35:52,335 - tensorflow - INFO - Could not find trained model in model_dir: /tmp/tmpuvs4py3d, running initialization to predict.
+2018-12-01 20:35:52,433 - tensorflow - INFO - Calling model_fn.
+2018-12-01 20:35:57,346 - tensorflow - INFO - Done calling model_fn.
+2018-12-01 20:35:58,120 - tensorflow - INFO - Graph was finalized.
+2018-12-01 20:35:58,974 - tensorflow - INFO - Running local_init_op.
+2018-12-01 20:35:59,006 - tensorflow - INFO - Done running local_init_op.
+2018-12-01 20:36:03,872 - tensorflow - INFO - Could not find trained model in model_dir: /tmp/tmpuvs4py3d, running initialization to predict.
+2018-12-01 20:36:03,961 - tensorflow - INFO - Calling model_fn.
+2018-12-01 20:36:08,914 - tensorflow - INFO - Done calling model_fn.
+2018-12-01 20:36:09,788 - tensorflow - INFO - Graph was finalized.
+2018-12-01 20:36:10,641 - tensorflow - INFO - Running local_init_op.
+2018-12-01 20:36:10,692 - tensorflow - INFO - Done running local_init_op.

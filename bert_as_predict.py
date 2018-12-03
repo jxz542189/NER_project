@@ -1,16 +1,20 @@
-from bert_blstm_crf.bert.extract_features import model_fn_builder
-from bert_blstm_crf.bert import modeling
+from bert.bert.extract_features import model_fn_builder
+from bert.bert import modeling
 import tensorflow as tf
 import os
 import json
-from bert_blstm_crf.utils.import_util import cls_from_str
+from bert.utils.import_util import cls_from_str
 from tensorflow.python.estimator.estimator import Estimator
-from bert_blstm_crf.bert.extract_features import convert_lst_to_features
-from bert_blstm_crf.bert import tokenization
-
+from bert.bert.extract_features import convert_lst_to_features
+from bert.bert import tokenization
+from bert.utils.threads_util import MyThread
+import logging
 
 config_path = os.path.join(os.path.join(os.path.dirname(os.path.realpath(__file__)), "bert_blstm_crf"), 'config')
 params_path = os.path.join(config_path, 'params.json')
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+                    filename='log.txt')
+logger = logging.getLogger(__name__)
 
 with open(params_path) as param:
     params_dict = json.load(param)
@@ -59,9 +63,41 @@ def get_input_fn(msg):
 
 
 if __name__ == '__main__':
+    #多线程
     msg = ["计算机博士的话", "隔壁实验室有去腾讯开80w的", "当然这应该是比较优秀的博士"]
     res = get_input_fn(msg)
     print(res[0])
+    batch_size = 1
+    batchs = int(len(msg) / batch_size)
+    threads = []
+    for i in range(batchs):
+        batch_data = msg[i * batch_size: (i + 1) * batch_size]
+        # print(batch_data)
+        t = MyThread(get_input_fn, batch_data, get_input_fn.__name__)
+        threads.append(t)
+        t.start()
+        print(threads)
+    other = len(msg) - batch_size * batchs
+    if other != 0:
+        batch_data = msg[batch_size * batchs:]
+        t = MyThread(get_input_fn, batch_data, get_input_fn.__name__)
+        threads.append(t)
+        t.start()
+    for i in range(len(threads)):
+        threads[i].join(100000)
+    res = []
+    for i in range(len(threads)):
+        tmp = [a.tolist() for a in threads[i].get_result()]
+        res.extend(tmp)
+    except_num = [1 for r in res if r == None]
+    if len(except_num) >= 1:
+       print("==failed==")
+    else:
+        print(res[0])
+    #单线程
+    # msg = ["计算机博士的话", "隔壁实验室有去腾讯开80w的", "当然这应该是比较优秀的博士"]
+    # res = get_input_fn(msg)
+    # print(res[0])
 
 
 
